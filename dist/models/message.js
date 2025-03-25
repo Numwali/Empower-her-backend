@@ -1,0 +1,24 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+var _mongoose = _interopRequireDefault(require("mongoose"));
+var MessageSchema = new _mongoose["default"].Schema({
+  conversationId: {
+    type: String
+  },
+  sender: {
+    type: String
+  },
+  text: {
+    type: String
+  }
+}, {
+  timestamps: true
+});
+var _default = _mongoose["default"].model("Message", MessageSchema);
+exports["default"] = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfbW9uZ29vc2UiLCJfaW50ZXJvcFJlcXVpcmVEZWZhdWx0IiwicmVxdWlyZSIsIk1lc3NhZ2VTY2hlbWEiLCJtb25nb29zZSIsIlNjaGVtYSIsImNvbnZlcnNhdGlvbklkIiwidHlwZSIsIlN0cmluZyIsInNlbmRlciIsInRleHQiLCJ0aW1lc3RhbXBzIiwiX2RlZmF1bHQiLCJtb2RlbCIsImV4cG9ydHMiXSwic291cmNlcyI6WyIuLi8uLi9zcmMvbW9kZWxzL21lc3NhZ2UuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vbmdvb3NlIGZyb20gXCJtb25nb29zZVwiO1xuXG5jb25zdCBNZXNzYWdlU2NoZW1hID0gbmV3IG1vbmdvb3NlLlNjaGVtYShcbiAge1xuICAgIGNvbnZlcnNhdGlvbklkOiB7XG4gICAgICB0eXBlOiBTdHJpbmcsXG4gICAgfSxcbiAgICBzZW5kZXI6IHtcbiAgICAgIHR5cGU6IFN0cmluZyxcbiAgICB9LFxuICAgIHRleHQ6IHtcbiAgICAgIHR5cGU6IFN0cmluZyxcbiAgICB9LFxuICB9LFxuICB7IHRpbWVzdGFtcHM6IHRydWUgfVxuKTtcblxuZXhwb3J0IGRlZmF1bHQgbW9uZ29vc2UubW9kZWwoXCJNZXNzYWdlXCIsIE1lc3NhZ2VTY2hlbWEpO1xuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUEsSUFBQUEsU0FBQSxHQUFBQyxzQkFBQSxDQUFBQyxPQUFBO0FBRUEsSUFBTUMsYUFBYSxHQUFHLElBQUlDLG9CQUFRLENBQUNDLE1BQU0sQ0FDdkM7RUFDRUMsY0FBYyxFQUFFO0lBQ2RDLElBQUksRUFBRUM7RUFDUixDQUFDO0VBQ0RDLE1BQU0sRUFBRTtJQUNORixJQUFJLEVBQUVDO0VBQ1IsQ0FBQztFQUNERSxJQUFJLEVBQUU7SUFDSkgsSUFBSSxFQUFFQztFQUNSO0FBQ0YsQ0FBQyxFQUNEO0VBQUVHLFVBQVUsRUFBRTtBQUFLLENBQ3JCLENBQUM7QUFBQyxJQUFBQyxRQUFBLEdBRWFSLG9CQUFRLENBQUNTLEtBQUssQ0FBQyxTQUFTLEVBQUVWLGFBQWEsQ0FBQztBQUFBVyxPQUFBLGNBQUFGLFFBQUEifQ==

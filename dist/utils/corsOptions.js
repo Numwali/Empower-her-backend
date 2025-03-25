@@ -1,0 +1,22 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.corsOptions = void 0;
+var allowedOriginsList = ["https://heal-the-world-fn.vercel.app", "https://heal-the-world-be.onrender.com", "http://localhost:3000", "http://localhost:4000"];
+var corsOptions = {
+  origin: function origin(_origin, callback) {
+    // Check if the origin is in the allowedOriginsList
+    if (!_origin || allowedOriginsList.includes(_origin)) {
+      // Allow the request
+      callback(null, true);
+    } else {
+      // Block the request
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+};
+exports.corsOptions = corsOptions;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJhbGxvd2VkT3JpZ2luc0xpc3QiLCJjb3JzT3B0aW9ucyIsIm9yaWdpbiIsImNhbGxiYWNrIiwiaW5jbHVkZXMiLCJFcnJvciIsImNyZWRlbnRpYWxzIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy91dGlscy9jb3JzT3B0aW9ucy5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBhbGxvd2VkT3JpZ2luc0xpc3QgPSBbXG4gIFwiaHR0cHM6Ly9oZWFsLXRoZS13b3JsZC1mbi52ZXJjZWwuYXBwXCIsXG4gIFwiaHR0cHM6Ly9oZWFsLXRoZS13b3JsZC1iZS5vbnJlbmRlci5jb21cIixcbiAgXCJodHRwOi8vbG9jYWxob3N0OjMwMDBcIixcbiAgXCJodHRwOi8vbG9jYWxob3N0OjQwMDBcIixcbl07XG5cbmV4cG9ydCBjb25zdCBjb3JzT3B0aW9ucyA9IHtcbiAgb3JpZ2luOiBmdW5jdGlvbiAob3JpZ2luLCBjYWxsYmFjaykge1xuICAgIC8vIENoZWNrIGlmIHRoZSBvcmlnaW4gaXMgaW4gdGhlIGFsbG93ZWRPcmlnaW5zTGlzdFxuICAgIGlmICghb3JpZ2luIHx8IGFsbG93ZWRPcmlnaW5zTGlzdC5pbmNsdWRlcyhvcmlnaW4pKSB7XG4gICAgICAvLyBBbGxvdyB0aGUgcmVxdWVzdFxuICAgICAgY2FsbGJhY2sobnVsbCwgdHJ1ZSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIC8vIEJsb2NrIHRoZSByZXF1ZXN0XG4gICAgICBjYWxsYmFjayhuZXcgRXJyb3IoXCJOb3QgYWxsb3dlZCBieSBDT1JTXCIpKTtcbiAgICB9XG4gIH0sXG4gIGNyZWRlbnRpYWxzOiB0cnVlLFxufTtcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsSUFBTUEsa0JBQWtCLEdBQUcsQ0FDekIsc0NBQXNDLEVBQ3RDLHdDQUF3QyxFQUN4Qyx1QkFBdUIsRUFDdkIsdUJBQXVCLENBQ3hCO0FBRU0sSUFBTUMsV0FBVyxHQUFHO0VBQ3pCQyxNQUFNLEVBQUUsU0FBQUEsT0FBVUEsT0FBTSxFQUFFQyxRQUFRLEVBQUU7SUFDbEM7SUFDQSxJQUFJLENBQUNELE9BQU0sSUFBSUYsa0JBQWtCLENBQUNJLFFBQVEsQ0FBQ0YsT0FBTSxDQUFDLEVBQUU7TUFDbEQ7TUFDQUMsUUFBUSxDQUFDLElBQUksRUFBRSxJQUFJLENBQUM7SUFDdEIsQ0FBQyxNQUFNO01BQ0w7TUFDQUEsUUFBUSxDQUFDLElBQUlFLEtBQUssQ0FBQyxxQkFBcUIsQ0FBQyxDQUFDO0lBQzVDO0VBQ0YsQ0FBQztFQUNEQyxXQUFXLEVBQUU7QUFDZixDQUFDO0FBQUNDLE9BQUEsQ0FBQU4sV0FBQSxHQUFBQSxXQUFBIn0=

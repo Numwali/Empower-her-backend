@@ -1,0 +1,23 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+var _mongoose = _interopRequireDefault(require("mongoose"));
+var RuleModel = new _mongoose["default"].Schema({
+  name: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  description: {
+    type: String
+  }
+}, {
+  timestamps: true
+});
+var _default = _mongoose["default"].model("Rule", RuleModel);
+exports["default"] = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfbW9uZ29vc2UiLCJfaW50ZXJvcFJlcXVpcmVEZWZhdWx0IiwicmVxdWlyZSIsIlJ1bGVNb2RlbCIsIm1vbmdvb3NlIiwiU2NoZW1hIiwibmFtZSIsInR5cGUiLCJTdHJpbmciLCJyZXF1aXJlZCIsInVuaXF1ZSIsImRlc2NyaXB0aW9uIiwidGltZXN0YW1wcyIsIl9kZWZhdWx0IiwibW9kZWwiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiLi4vLi4vc3JjL21vZGVscy9SdWxlLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBtb25nb29zZSBmcm9tIFwibW9uZ29vc2VcIjtcblxuY29uc3QgUnVsZU1vZGVsID0gbmV3IG1vbmdvb3NlLlNjaGVtYShcbiAge1xuICAgIG5hbWU6IHtcbiAgICAgIHR5cGU6IFN0cmluZyxcbiAgICAgIHJlcXVpcmVkOiB0cnVlLFxuICAgICAgdW5pcXVlOiB0cnVlLFxuICAgIH0sXG4gICAgZGVzY3JpcHRpb246IHtcbiAgICAgIHR5cGU6IFN0cmluZyxcbiAgICB9LFxuICB9LFxuICB7IHRpbWVzdGFtcHM6IHRydWUgfVxuKTtcblxuZXhwb3J0IGRlZmF1bHQgbW9uZ29vc2UubW9kZWwoXCJSdWxlXCIsIFJ1bGVNb2RlbCk7XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQSxJQUFBQSxTQUFBLEdBQUFDLHNCQUFBLENBQUFDLE9BQUE7QUFFQSxJQUFNQyxTQUFTLEdBQUcsSUFBSUMsb0JBQVEsQ0FBQ0MsTUFBTSxDQUNuQztFQUNFQyxJQUFJLEVBQUU7SUFDSkMsSUFBSSxFQUFFQyxNQUFNO0lBQ1pDLFFBQVEsRUFBRSxJQUFJO0lBQ2RDLE1BQU0sRUFBRTtFQUNWLENBQUM7RUFDREMsV0FBVyxFQUFFO0lBQ1hKLElBQUksRUFBRUM7RUFDUjtBQUNGLENBQUMsRUFDRDtFQUFFSSxVQUFVLEVBQUU7QUFBSyxDQUNyQixDQUFDO0FBQUMsSUFBQUMsUUFBQSxHQUVhVCxvQkFBUSxDQUFDVSxLQUFLLENBQUMsTUFBTSxFQUFFWCxTQUFTLENBQUM7QUFBQVksT0FBQSxjQUFBRixRQUFBIn0=

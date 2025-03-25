@@ -14,7 +14,7 @@ import { corsOptions } from "./utils/corsOptions.js";
 dotenv.config();
 const app = express();
 mongoConnect();
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(fileUploader({ useTempFiles: true }));

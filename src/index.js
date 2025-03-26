@@ -9,11 +9,12 @@ import mongoConnect from "./config/db.config.js";
 import router from "./routers/index.js";
 import fileUploader from "express-fileupload";
 import googleRoute from "./routers/googleAuth.js";
+import { corsOptions } from "./utils/corsOptions.js";
 
 dotenv.config();
 const app = express();
 mongoConnect();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(fileUploader({ useTempFiles: true }));
